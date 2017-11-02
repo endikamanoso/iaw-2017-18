@@ -1,0 +1,81 @@
+body{
+    font-family: sans-serif;
+}
+#izda{
+    position:fixed;
+    left:0;
+    top:0;
+    height:100%;
+    width:300px;
+    text-align: right;
+    font-family: sans-serif;
+    background: gray url(../img/nathan-anderson-152403.jpg) no-repeat left;
+    background-size: cover;
+    padding-top:8em;
+}
+
+#izda figcaption{
+    color: #b4b4b4;
+    font-size: 1.3em;
+}
+
+strong{
+    color:white;
+}
+
+#izda figure{
+    border-radius:300px;
+}
+
+#izda img{
+    border-radius:300px;
+    width:100px;
+}
+
+main{
+    position:fixed;
+    left:300px;
+    top:0;
+    bottom:0;
+    right:0;
+    padding-left:2em;
+    padding-top:8em;
+    overflow: auto;
+}
+
+main h1, main h2{
+    font-weight: normal;
+    color:gray;
+}
+main h2{
+    padding-top:1em;
+}
+
+main p{
+    color:gray;
+    line-height: 200%;
+    border-bottom: gray 1px solid;
+    padding-bottom: 3em;
+}
+
+main figure{
+    display:inline-block;
+    width:40%;
+}
+
+main figure img{
+    width:100%;
+}
+
+main figcaption{
+    margin-top:1em;
+    color:gray;
+}
+
+main a{
+    color:gray;
+}
+
+main section{
+    width:100%;
+}

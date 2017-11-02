@@ -1,0 +1,287 @@
+{
+  "Informaci\u00f3n general:": {
+    "Votos blancos": "187771",
+    "Votos nulos": "226997",
+    "Censo total": "34631581",
+    "Votos correctos": "25350447",
+    "Porcentaje escrutado": 10000,
+    "Abstenciones": "9280639"
+  },
+  "Escrutinio": {
+    "CCD": {
+      "Nombre completo": "CIUDADANOS DE CENTRO DEMOCR\u00c1TICO",
+      "Votos": "10805",
+      "esca\u00f1os": 0
+    },
+    "PODEMOS": {
+      "Nombre completo": "PODEMOS",
+      "Votos": "3182082",
+      "esca\u00f1os": 42
+    },
+    "CRA": {
+      "Nombre completo": "CIUDADANOS RURALES AGRUPADOS",
+      "Votos": "1027",
+      "esca\u00f1os": 0
+    },
+    "C\u0027s": {
+      "Nombre completo": "CIUDADANOS-PARTIDO DE LA CIUDADAN\u00cdA",
+      "Votos": "3500541",
+      "esca\u00f1os": 40
+    },
+    "DN": {
+      "Nombre completo": "DEMOCRACIA NACIONAL",
+      "Votos": "1685",
+      "esca\u00f1os": 0
+    },
+    "EL PI": {
+      "Nombre completo": "EL PI - PROPOSTA PER LES ILLES",
+      "Votos": "12902",
+      "esca\u00f1os": 0
+    },
+    "EB": {
+      "Nombre completo": "ESCA\u00d1OS EN BLANCO",
+      "Votos": "10060",
+      "esca\u00f1os": 0
+    },
+    "EH Bildu": {
+      "Nombre completo": "EUSKAL HERRIA BILDU",
+      "Votos": "218467",
+      "esca\u00f1os": 2
+    },
+    "EAJ-PNV": {
+      "Nombre completo": "EUZKO ALDERDI JELTZALEA-PARTIDO NACIONALISTA VASCO",
+      "Votos": "301585",
+      "esca\u00f1os": 6
+    },
+    "FE de las JONS": {
+      "Nombre completo": "FALANGE ESPA\u00d1OLA DE LAS J.O.N.S.",
+      "Votos": "7594",
+      "esca\u00f1os": 0
+    },
+    "PFyV": {
+      "Nombre completo": "FAMILIA Y VIDA",
+      "Votos": "714",
+      "esca\u00f1os": 0
+    },
+    "FDEE": {
+      "Nombre completo": "FORO DEM\u00d3CRATA",
+      "Votos": "454",
+      "esca\u00f1os": 0
+    },
+    "IFem": {
+      "Nombre completo": "INICIATIVA FEMINISTA",
+      "Votos": "1594",
+      "esca\u00f1os": 0
+    },
+    "Ln": {
+      "Nombre completo": "LIBERTAD NAVARRA, LIBERTATE NAFARRA",
+      "Votos": "1022",
+      "esca\u00f1os": 0
+    },
+    "CENTRO MODERADO": {
+      "Nombre completo": "LOS VERDES-ECOPACIFISTAS",
+      "Votos": "3254",
+      "esca\u00f1os": 0
+    },
+    "+MAS+": {
+      "Nombre completo": "MUERTE AL SISTEMA",
+      "Votos": "309",
+      "esca\u00f1os": 0
+    },
+    "mlgXS\u00cd": {
+      "Nombre completo": "M\u00c1LAGA POR S\u00cd",
+      "Votos": "924",
+      "esca\u00f1os": 0
+    },
+    "OE": {
+      "Nombre completo": "ONGI ETORRI",
+      "Votos": "110",
+      "esca\u00f1os": 0
+    },
+    "PACMA": {
+      "Nombre completo": "PARTIDO ANIMALISTA CONTRA EL MALTRATO ANIMAL",
+      "Votos": "219191",
+      "esca\u00f1os": 0
+    },
+    "PCPE": {
+      "Nombre completo": "PARTIDO COMUNISTA DE LOS PUEBLOS DE ESPA\u00d1A",
+      "Votos": "30897",
+      "esca\u00f1os": 0
+    },
+    "PCOE": {
+      "Nombre completo": "PARTIDO COMUNISTA OBRERO ESPA\u00d1OL",
+      "Votos": "1906",
+      "esca\u00f1os": 0
+    },
+    "PT": {
+      "Nombre completo": "PARTIDO DA TERRA",
+      "Votos": "2957",
+      "esca\u00f1os": 0
+    },
+    "PH": {
+      "Nombre completo": "PARTIDO HUMANISTA",
+      "Votos": "2908",
+      "esca\u00f1os": 0
+    },
+    "P-LIB": {
+      "Nombre completo": "PARTIDO LIBERTARIO",
+      "Votos": "2833",
+      "esca\u00f1os": 0
+    },
+    "PP": {
+      "Nombre completo": "PARTIDO POPULAR",
+      "Votos": "7215752",
+      "esca\u00f1os": 123
+    },
+    "PREPAL": {
+      "Nombre completo": "PARTIDO REGIONALISTA DEL PA\u00cdS LEONES",
+      "Votos": "1363",
+      "esca\u00f1os": 0
+    },
+    "PSOE": {
+      "Nombre completo": "PARTIDO SOCIALISTA OBRERO ESPA\u00d1OL",
+      "Votos": "5530779",
+      "esca\u00f1os": 90
+    },
+    "PUM+J": {
+      "Nombre completo": "POR UN MUNDO M\u00c1S JUSTO",
+      "Votos": "4533",
+      "esca\u00f1os": 0
+    },
+    "SAIn": {
+      "Nombre completo": "SOLIDARIDAD Y AUTOGESTI\u00d3N INTERNACIONALISTA",
+      "Votos": "4516",
+      "esca\u00f1os": 0
+    },
+    "SOLUCIONA": {
+      "Nombre completo": "SOLUCIONA",
+      "Votos": "406",
+      "esca\u00f1os": 0
+    },
+    "SOMVAL": {
+      "Nombre completo": "SOM VALENCIANS",
+      "Votos": "6084",
+      "esca\u00f1os": 0
+    },
+    "unio.cat": {
+      "Nombre completo": "UNI\u00d3 DEMOCR\u00c0TICA DE CATALUNYA",
+      "Votos": "64726",
+      "esca\u00f1os": 0
+    },
+    "UPYD": {
+      "Nombre completo": "UNI\u00d3N PROGRESO Y DEMOCRACIA",
+      "Votos": "153505",
+      "esca\u00f1os": 0
+    },
+    "VOX": {
+      "Nombre completo": "VOX",
+      "Votos": "57753",
+      "esca\u00f1os": 0
+    },
+    "PLD": {
+      "Nombre completo": "PARTIDO LIBERAL DE DERECHAS",
+      "Votos": "204",
+      "esca\u00f1os": 0
+    },
+    "AJU": {
+      "Nombre completo": "ANDALUCES DE JA\u00c9N UNIDOS",
+      "Votos": "771",
+      "esca\u00f1os": 0
+    },
+    "CANARIAS DECIDE": {
+      "Nombre completo": "CANARIAS DECIDE: LOS VERDES, UNIDAD DEL PUEBLO Y ALTERNATIVA REPUBLICANA",
+      "Votos": "2874",
+      "esca\u00f1os": 0
+    },
+    "GBAI": {
+      "Nombre completo": "GEROA BAI",
+      "Votos": "30554",
+      "esca\u00f1os": 0
+    },
+    "CCa-PNC": {
+      "Nombre completo": "COALICI\u00d3N CANARIA - PARTIDO NACIONALISTA CANARIO",
+      "Votos": "81750",
+      "esca\u00f1os": 1
+    },
+    "ARAPV": {
+      "Nombre completo": "ARA, PA\u00cdS VALENCI\u00c0",
+      "Votos": "2487",
+      "esca\u00f1os": 0
+    },
+    "IU-UPeC": {
+      "Nombre completo": "UNIDAD POPULAR: IZQUIERDA UNIDA, UNIDAD POPULAR EN COM\u00daN",
+      "Votos": "923133",
+      "esca\u00f1os": 2
+    },
+    "EU-eX": {
+      "Nombre completo": "EXTREMADURA UNIDA-EXTREME\u00d1OS",
+      "Votos": "1995",
+      "esca\u00f1os": 0
+    },
+    "RECORTES CERO-GRUPO VERDE": {
+      "Nombre completo": "RECORTES CERO-GRUPO VERDE",
+      "Votos": "48222",
+      "esca\u00f1os": 0
+    },
+    "X LA IZQUIERDA-LOS VERDES": {
+      "Nombre completo": "X LA IZQUIERDA-LOS VERDES",
+      "Votos": "7342",
+      "esca\u00f1os": 0
+    },
+    "JS,PC": {
+      "Nombre completo": "JUSTIZIA SOCIAL, PARTICIPACI\u00d3N CIUDADANA",
+      "Votos": "405",
+      "esca\u00f1os": 0
+    },
+    "M\u00c9S": {
+      "Nombre completo": "M\u00c9S",
+      "Votos": "33931",
+      "esca\u00f1os": 0
+    },
+    "DL": {
+      "Nombre completo": "DEMOCR\u00c0CIA I LLIBERTAT. CONVERG\u00c8NCIA. DEM\u00d2CRATES. REAGRUPAMENT",
+      "Votos": "565501",
+      "esca\u00f1os": 8
+    },
+    "PODEMOS-COMPROM\u00cdS": {
+      "Nombre completo": "COMPROM\u00cdS-PODEMOS-\u00c9S EL MOMENT",
+      "Votos": "671071",
+      "esca\u00f1os": 9
+    },
+    "AVANT": {
+      "Nombre completo": "AVANT VALENCIANS",
+      "Votos": "1001",
+      "esca\u00f1os": 0
+    },
+    "N\u00d3S": {
+      "Nombre completo": "N\u00d3S-CANDIDATURA GALEGA (BNG-CG-FOGA-PCPG-PG)",
+      "Votos": "70464",
+      "esca\u00f1os": 0
+    },
+    "EN COM\u00da": {
+      "Nombre completo": "EN COM\u00da PODEM",
+      "Votos": "927940",
+      "esca\u00f1os": 12
+    },
+    "PODEMOS-En Marea-ANOVA-EU": {
+      "Nombre completo": "EN MAREA",
+      "Votos": "408370",
+      "esca\u00f1os": 6
+    },
+    "EN POSITIU": {
+      "Nombre completo": "EN POSITIU",
+      "Votos": "1276",
+      "esca\u00f1os": 0
+    },
+    "Independientes-FIA": {
+      "Nombre completo": "INDEPENDIENTES POR ARAG\u00d3N",
+      "Votos": "673",
+      "esca\u00f1os": 0
+    },
+    "ERC-CATSI": {
+      "Nombre completo": "ESQUERRA REPUBLICANA DE CATALUNYA-CATALUNYA S\u00cd",
+      "Votos": "599289",
+      "esca\u00f1os": 9
+    }
+  }
+}

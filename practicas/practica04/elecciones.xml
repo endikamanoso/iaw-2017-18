@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elecciones>
+    <eleccion tipo="congreso">
+        <votacion>
+            <texto>15 de junio de 1977</texto>
+            <clave>junio-1977</clave>
+        </votacion>
+        <votacion>
+            <texto>1 de marzo de 1979</texto>
+            <clave>marzo-1979</clave>
+        </votacion>
+        <votacion>
+            <texto>28 de octubre de 1982</texto>
+            <clave>octubre-1982</clave>
+        </votacion>
+        <votacion>
+            <texto>22 de junio de 1986</texto>
+            <clave>junio-1986</clave>
+        </votacion>
+        <votacion>
+            <texto>29 de octubre de 1989</texto>
+            <clave>octubre-1989</clave>
+        </votacion>
+        <votacion>
+            <texto>6 de junio de 1993</texto>
+            <clave>junio-1993</clave>
+        </votacion>
+        <votacion>
+            <texto>3 de marzo de 1996</texto>
+            <clave>marzo-1996</clave>
+        </votacion>
+        <votacion>
+            <texto>12 de marzo de 2000</texto>
+            <clave>marzo-2000</clave>
+        </votacion>
+        <votacion>
+            <texto>14 de marzo de 2004</texto>
+            <clave>marzo-2004</clave>
+        </votacion>
+        <votacion>
+            <texto>9 de marzo de 2008</texto>
+            <clave>marzo-2008</clave>
+        </votacion>
+        <votacion>
+            <texto>20 de noviembre de 2011</texto>
+            <clave>noviembre-2011</clave>
+        </votacion>
+        <votacion>
+            <texto>20 de diciembre de 2015</texto>
+            <clave>diciembre-2015</clave>
+        </votacion>
+        <votacion>
+            <texto>26 de junio de 2016</texto>
+            <clave>junio-2016</clave>
+        </votacion>
+    </eleccion>
+    <eleccion tipo="senado">
+        <votacion>
+            <texto>22 de junio de 1986</texto>
+            <clave>junio-1986</clave>
+        </votacion>
+        <votacion>
+            <texto>29 de octubre de 1989</texto>
+            <clave>octubre-1989</clave>
+        </votacion>
+        <votacion>
+            <texto>6 de junio de 1993</texto>
+            <clave>junio-1993</clave>
+        </votacion>
+        <votacion>
+            <texto>3 de marzo de 1996</texto>
+            <clave>marzo-1996</clave>
+        </votacion>
+        <votacion>
+            <texto>12 de marzo de 2000</texto>
+            <clave>marzo-2000</clave>
+        </votacion>
+        <votacion>
+            <texto>14 de marzo de 2004</texto>
+            <clave>marzo-2004</clave>
+        </votacion>
+        <votacion>
+            <texto>9 de marzo de 2008</texto>
+            <clave>marzo-2008</clave>
+        </votacion>
+        <votacion>
+            <texto>20 de noviembre de 2011</texto>
+            <clave>noviembre-2011</clave>
+        </votacion>
+        <votacion>
+            <texto>20 de diciembre de 2015</texto>
+            <clave>diciembre-2015</clave>
+        </votacion>
+        <votacion>
+            <texto>26 de junio de 2016</texto>
+            <clave>junio-2016</clave>
+        </votacion>
+    </eleccion>
+</elecciones>
