@@ -8,23 +8,34 @@
 
 </head>
 <body>
+<header class="jumbotro">
+    <h1>Tabla ASCII</h1>
+</header>
 <table class="table table-striped table-bordered" >
 
 <?php
     //primera fila
     echo "<thead class='thead-dark'>";
     echo "<tr>";
-    for($i=1;$i<=8;$i++){
+    for($i=1;$i<=5;$i++){
         echo "<th scope='col'>Código</th><th scope='col'>Valor</th>";
     }
     echo "</tr>";
     echo "</thead>";
     //resto de filas
     echo "<tbody>";
-    echo "<tr>";
-    for($i=1;$i<=127;$i++){
-        echo "<td class='table-active'>$i</td><td>".chr($i)."</td>";
-        if($i%8==0) echo "</tr><tr>";
+    //escribo 26 filas, resultado de 128/5 redondeado
+    //128 es el tamaño de la tabla ASCII completa y 5
+    //son los códigos que se muestran en cada fila
+    $codigo=0;
+    for($i=1;$i<=26;$i++){
+        echo "<tr>";
+        for($j=1;$j<=5;$j++) {
+            echo "<td class='table-active'>$codigo</td><td>" . chr($codigo) . "</td>";
+            $codigo++;
+            if($codigo==128) break;
+        }
+        echo "</tr>";
     }
     echo "</tr>";
     echo "</tbody>";
