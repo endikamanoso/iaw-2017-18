@@ -27,7 +27,7 @@
     for($i=1;$i<=10000;$i++){
         echo "<tr>";
         for($j=1;$j<=5;$j++) {
-            echo "<td class='table-active'>$codigo</td><td>" . "&#$codigo" . $i . "</td>";
+            echo "<td class='table-active'>$codigo</td><td>&#$codigo</td>";
             $codigo++;
         }
         echo "<tr>";
