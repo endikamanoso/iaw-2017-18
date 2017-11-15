@@ -52,8 +52,7 @@ if (isset($_GET["p"])) {
         <div class="col-12">
             <table class="table table-striped">
                 <?php
-                $inicio = ($pagina - 1) * 500 + 1;
-                $fin = $inicio + 499;
+                $codigo = ($pagina - 1) * 500 + 1;
                 //primera fila
                 echo "<thead class='thead-dark'><tr>";
                 for ($i = 1; $i <= 5; $i++) {
@@ -62,19 +61,21 @@ if (isset($_GET["p"])) {
                 echo "</tr></thead>";
                 ?>
             </table>
-    </div>
+        </div>
 </nav>
 <main>
     <div id="tabla">
         <table class="table table-striped">
             <?php
-            //resto de filas
-            echo "<tr>";
-            for ($i = $inicio; $i <= $fin; $i++) {
-                echo "<td class='table-active'>$i</td><td>" . "&#" . $i . "</td>";
-                if ($i % 5 == 0) echo "</tr>";
+            //filas, 100 (500/5)
+            for ($i = 1; $i <= 100; $i++) {
+                echo "<tr>";
+                for ($j=1;$j<=5; $j++) {
+                    echo "<td class='table-active'>$codigo</td><td>" . "&#$codigo;</td>";
+                    $codigo++;
+                }
+                echo "</tr>";
             }
-            echo "</tr>";
             ?>
         </table>
     </div>
