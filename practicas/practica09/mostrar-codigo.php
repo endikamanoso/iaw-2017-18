@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="../librerias/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../librerias/css/bootstrap.min.css">
     <style>
         tr:last-of-type td{
             font-size:6em;

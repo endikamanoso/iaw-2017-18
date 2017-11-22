@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="Localhost (1)">
+  <component name="PublishConfigData" serverName="e-localhost">
     <serverData>
+      <paths name="Ejercicios clases IAW">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="Libro IAW">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="Libro-iaw">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="Libro-iaw (1)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="Localhost">
         <serverdata>
           <mappings>
@@ -9,10 +37,17 @@
           </mappings>
         </serverdata>
       </paths>
-      <paths name="Localhost (1)">
+      <paths name="e-localhost">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="iaw-2017-18" />
+            <mapping local="$PROJECT_DIR$" web="iaw-17-18" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="xampp iaw">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

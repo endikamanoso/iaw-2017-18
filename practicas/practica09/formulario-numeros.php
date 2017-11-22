@@ -19,7 +19,7 @@ if (isset($_POST["color"])) $c = $_POST["color"];
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Números</title>
-    <link rel="stylesheet" href="../librerias/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../librerias/css/bootstrap.min.css">
     <style>
         [type="color"] {
             height: 6em;

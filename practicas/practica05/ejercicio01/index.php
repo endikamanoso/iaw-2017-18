@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="author" content="Jorge Sánchez">
     <title>Imagen aleatoria</title>
-    <link rel="stylesheet" href="../../librerias/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../librerias/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>

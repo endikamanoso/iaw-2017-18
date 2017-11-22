@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Lectura del código hexadecimal</title>
-    <link rel="stylesheet" href="../librerias/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../librerias/css/bootstrap.min.css">
 </head>
 <body>
 <main class="container">
