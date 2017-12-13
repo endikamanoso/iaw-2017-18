@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../librerias/css/bootstrap.min.css">
+    <style>
+        .upper{
+            text-transform: capitalize;
+        }
+        p{
+            margin:.5em;
+        }
+        .row:nth-of-type(2n){
+            background-color: #c9d6cb;
+        }
+        .col-2{
+            padding-left:0;
+        }
+    </style>
+</head>
+<body>
+<header class="jumbotron text-center">
+    <h1 class=" display-3">Lista aleatoria de Usuarios</h1>
+</header>
+<div id="contenido" class="container">
+    <div class="row">
+        <div class="col-12">
+            <button id="boton" class="brn btn-primary btn-lg btn-block">Hazlo!</button>
+        </div>
+    </div>
+</div>
+
+<script src="../../librerias/js/jquery-3.2.1.min.js"></script>
+<script>
+    $(function () {
+        $("#boton").on("click", function (e) {
+            var jqxhr = $.ajax({
+                url: 'https://randomuser.me/api/',
+                method: "get",
+                dataType: "json",
+                data: {results: 50}
+            });
+
+            jqxhr
+                .done(function (data) {
+                    $("#boton").parent().hide();
+                    var listaUsuarios = data["results"];
+                    var texto = "";
+                    for (var i = 0; i < listaUsuarios.length; i++) {
+                        var usuario = listaUsuarios[i];
+                        var nombre = usuario["name"]["first"];
+                        var apellido = usuario["name"]["last"];
+                        var email = usuario["email"];
+                        var localidad = usuario["location"]["city"]
+                        var estado = usuario["location"]["state"]
+                        var cp = usuario["location"]["postcode"]
+                        var calle = usuario["location"]["street"]
+                        var imagen = usuario["picture"]["large"];
+                        texto="<div class='row justify-content-center align-items-center'>";
+                            texto += "<div class='col-2'>";
+                                texto += "<img src='" + imagen + "'>";
+                            texto+="</div>";
+                            texto+="<div class='col-10 align-middle'>";
+                                texto += "<p class='upper'>"+nombre + " " + apellido + "</p>";
+                                texto += "<p>"+email + "</p>";
+                                texto += "<p class='upper'>"+calle + ", " + cp + ", " + localidad + " (" + estado + ")</p>";
+                            texto += "</div>";
+                        texto+="</div>";
+                        $("#contenido").append(texto);
+                        console.log(texto);
+                    }
+                })
+                .fail(function (jxhr, textStatus) {
+                    console.log(textStatus);
+                })
+        })
+
+    })
+
+</script>
+</body>
+</html>
