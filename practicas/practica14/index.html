@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../librerias/css/bootstrap.min.css">
+    <style>
+        .upper{
+            text-transform: capitalize;
+        }
+        p{
+            margin:.5em;
+        }
+    </style>
+</head>
+<body>
+<header class="jumbotron text-center">
+    <h1 class=" display-3" id="titulo"></h1>
+</header>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 text-center"  id="contenido">
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12 text-center">
+            <button class="bt btn-primary" id="nuevo">Cambiar de usuario</button>
+        </div>
+    </div>
+</div>
+
+<script src="../../librerias/js/jquery-3.2.1.min.js"></script>
+<script>
+    function mostrarUsuarios(listaUsuarios){
+        var texto = "";
+        for (var i = 0; i < listaUsuarios.length; i++) {
+            var usuario = listaUsuarios[i];
+            var nombre = usuario["name"]["first"];
+            var apellido = usuario["name"]["last"];
+            var email = usuario["email"];
+            var localidad = usuario["location"]["city"];
+            var estado = usuario["location"]["state"];
+            var cp = usuario["location"]["postcode"];
+            var calle = usuario["location"]["street"];
+            var imagen = usuario["picture"]["large"];
+            //Cambio del título
+            if(usuario["gender"]=="male") $("#titulo").text("Usuario de la semana");
+            else $("#titulo").text("Usuaria de la semana");
+            //datos
+            texto = "<img src='" + imagen + "' class='text-center'><br>";
+            texto += "<p class='upper text-center'><strong>"+nombre + " " + apellido + "</strong></p>";
+            texto += "<p class='text-center'>"+email + "</p>";
+            texto += "<p class='upper text-center'>"+calle + ", " + cp + ", " + localidad + " (" + estado + ")</p>";
+            $("#contenido").html(texto);
+        }
+    }
+
+
+    $(function () {
+
+            var jqxhr = $.ajax({
+                url: 'recoger.php',
+                method: "get",
+                dataType: "json"
+            });
+
+            jqxhr
+                .done(function (data) {
+                    mostrarUsuarios(data["results"]);
+                })
+                .fail(function (jxhr, textStatus) {
+                    console.log(textStatus);
+                });
+
+            $("#nuevo").on("click",function(){
+                var jqxhr = $.ajax({
+                    url: 'recoger.php',
+                    method: "get",
+                    dataType: "json",
+                    data:{"nuevo":""}
+                });
+
+                jqxhr
+                    .done(function (data) {
+                        mostrarUsuarios(data["results"]);
+                    })
+                    .fail(function (jxhr, textStatus) {
+                        console.log(textStatus);
+                    });
+            })
+    })
+
+</script>
+</body>
+</html>
