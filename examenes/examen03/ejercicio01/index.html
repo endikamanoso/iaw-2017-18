@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../librerias/css/bootstrap.min.css">
+</head>
+<body>
+<header class="jumbotron">
+    <h1 class="display-3">Conversor de euros</h1>
+</header>
+<div class="container">
+    <form action="#">
+        <div class="row justify-content-center">
+            <div class="col-3 text-right">
+                <p>Cantidad de euros: </p>
+            </div>
+            <div class="col-5">
+                <input class="form-control" placeholder="Cantidad de euros" type="number" value="1" name="euros" id="euros">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">&nbsp;</div>
+        </div>
+        <div class="row row justify-content-center">
+            <div class="col-3">
+                <p class="text-right">Convertir a:</p>
+            </div>
+            <div class="col-5">
+                <select name="moneda" id="moneda" class="form-control">
+                    <option disabled selected>Seleccione la moneda</option>
+                    <option value="USD">Dólar de EEUU (USD)</option>
+                    <option value="GBP">Libra esterlina (GBP)</option>
+                    <option value="JPY">Yen (JPY)</option>
+                </select>
+            </div>
+        </div>
+        <div class="div" style="height:4em">&nbsp;</div>
+        <div class="row text-center">
+            <div class="col-12" id="resultado">
+
+            </div>
+        </div>
+    </form>
+</div>
+<script src="../../../librerias/js/jquery-3.2.1.min.js"></script>
+<script>
+    function cambiarResultado(){
+        var jqxhr = $.ajax({
+            url: "https://api.fixer.io/latest",
+            method: "get",
+            dataType: "json"
+        });
+
+        jqxhr.done(function (data) {
+            var cambio=data["rates"][$("#moneda").val()];
+            $("#resultado").html(
+                "<h2>"+
+                cambio*$("#euros").val()+
+                " "+$("#moneda").val()+
+                "</h2>"
+            )
+
+        })
+    }
+
+    $(function () {
+        $("#euros").on("change", function () {
+            var moneda=$("#moneda").val();
+            if(moneda) {
+                cambiarResultado();
+            }
+        });
+        $("#moneda").on("change", function () {
+            cambiarResultado();
+        });
+    });
+</script>
+</body>
+</html>
