@@ -81,7 +81,8 @@ else
                         echo "<img src='img/".$fila["image_d3"]."' alt='".$fila["nombre"]."' class='rounded'>";
                     echo "</div>";
                     echo "<div class='col-6  align-self-end'>";
-                        echo "<p><span class='badge badge-secondary'>Resolución</span> ".$fila["resolucion"]." dpi<br>";
+                        echo "<p><span class='badge badge-secondary'>Precio</span> ".$fila["precio"]." &euro;<br>";
+                        echo "<span class='badge badge-secondary'>Resolución</span> ".$fila["resolucion"]." dpi<br>";
                         if($fila["wireless"]) $wireless="si";
                         else $wireless="no";
                         echo "<span class='badge badge-secondary'>Wireless</span> $wireless</p>";
