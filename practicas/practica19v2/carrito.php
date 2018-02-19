@@ -1,9 +1,7 @@
 <?php
 session_start();
 include("constantes.php");
-if(isset($_SESSION["mensaje"])){
-    unset($_SESSION["mensaje"]);
-}
+$mensaje=obtenermensaje();
 ?>
 <!doctype html>
 <html lang="es">
@@ -31,10 +29,10 @@ if(isset($_SESSION["mensaje"])){
                 <a class="nav-link" href="index.php">Lista de artículos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Registro</a>
+                <a class="nav-link" href="registro.php">Registro</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Acceso</a>
+                <a class="nav-link" href="acceso.php">Acceso</a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="carrito.php">Ver carrito <i class="fa fa-shopping-cart"></i></a>
@@ -99,13 +97,31 @@ if(isset($_SESSION["mensaje"])){
     </div>
     </div>
 </main>
+<div class="modal fade" tabindex="-1" role="dialog" id="mensajes">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Mensaje</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p><?=$mensaje?></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="../../librerias/js/jquery-3.2.1.min.js"></script>
 <script src="../../librerias/js/popper.js"></script>
 <script src="../../librerias/js/bootstrap.min.js"></script>
 <script>
     $(function(){
         $("#mensajes").modal({
-            show:<?=$show?>
+            show:<?=$mensaje?"true":"false"?>
         })
     })
 </script>

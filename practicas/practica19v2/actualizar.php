@@ -10,11 +10,12 @@ if (isset($_GET["cantidad"]) && is_array($_GET["cantidad"])) {
         foreach ($cantidad as $id=>$valor){
             $sql = "UPDATE carrito SET cantidad=$valor WHERE id_articulo=$id AND id_cliente=1";
             $res = $mysqli->query($sql);
-            if($mysqli->error==false){
+            if($mysqli->error==true){
                 $error = E_BD_INSTRUCCION;
             }
         }
         $mysqli->close();
+        if($error==0) $error=E_CARRITO_ACTUALIZADO;
     } else {
         $error = E_BD_SIN_CONEXION;
     }

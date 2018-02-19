@@ -1,14 +1,7 @@
 <?php
 session_start();
 include("constantes.php");
-$mensaje="";
-if(isset($_SESSION["mensaje"]) && $_SESSION["mensaje"]!=E_SIN_ERROR){
-    $show="true";
-    $mensaje=ARRAY_MENSAJES[$_SESSION["mensaje"]];
-    $_SESSION["mensaje"]=0;
-}
-else
-    $show=false;
+$mensaje=obtenermensaje();
 ?>
 <!doctype html>
 <html lang="es">
@@ -33,10 +26,10 @@ else
                 <a class="nav-link" href="#">Lista de artículos <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Registro</a>
+                <a class="nav-link" href="registro.php">Registro</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Acceso</a>
+                <a class="nav-link" href="acceso.php">Acceso</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="carrito.php">Ver carrito <i class="fa fa-shopping-cart"></i></a>
@@ -123,7 +116,7 @@ else
 <script>
     $(function(){
         $("#mensajes").modal({
-            show:<?=$show?>
+            show:<?=$mensaje?"true":"false"?>
         })
     })
 </script>
