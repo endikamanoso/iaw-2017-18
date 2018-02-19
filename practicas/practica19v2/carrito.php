@@ -1,7 +1,9 @@
 <?php
 session_start();
 include("constantes.php");
-
+if(isset($_SESSION["mensaje"])){
+    unset($_SESSION["mensaje"]);
+}
 ?>
 <!doctype html>
 <html lang="es">
@@ -57,7 +59,7 @@ include("constantes.php");
         if($mysqli->error==false){
             $fila=$res->fetch_assoc();
             if($fila){
-                echo "<form action='cambiarCantidad.php'>";
+                echo "<form action='actualizar.php'>";
                 echo "<table class='table'>";
                 $total=0;
                     while($fila){
@@ -65,8 +67,8 @@ include("constantes.php");
                             echo "<td><img src='img/".$fila["image_peque"]."' alt='miniatura' class='float-left'></td>";
                             echo "<td><strong>".$fila["nombre"]."</strong></td>";
                             echo "<td>".$fila["precio"]."&euro;</td>";
-                            $id="a".$fila["id_articulo"];
-                            echo "<td><label for='$id'>Cantidad&nbsp;&nbsp;</label><input type='number' id='$id' name='$id' value='".$fila["cantidad"]."'></td>";
+                            $id=$fila["id_articulo"];
+                            echo "<td><label for='cantidad$id'>Cantidad&nbsp;&nbsp;</label><input type='number' id='cantidad$id' name='cantidad[$id]' value='".$fila["cantidad"]."'></td>";
                             echo "<td><a href='quitar.php?id_articulo=".$fila["id_articulo"]."' class='btn btn-danger'>Quitar</a>";
                         echo "</tr>";
                         $total+=$fila["precio"]*$fila["cantidad"];

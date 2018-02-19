@@ -1,4 +1,13 @@
 <?php
+
+const DATOS_BD=array(
+  "servidor"=>"localhost",
+  "usuario"=>"tienda",
+  "password"=>"12345",
+  "bd"=>"tienda"
+);
+
+
 const E_SIN_ERROR=0;
 const E_BD_SIN_CONEXION=1;
 const E_BD_INSTRUCCION=2;
@@ -20,4 +29,9 @@ const ARRAY_MENSAJES=array(
 );
 
 
+function conectarBD(){
+    return new mysqli(DATOS_BD["servidor"],DATOS_BD["usuario"],DATOS_BD["password"],DATOS_BD["bd"]);
+}
+
 ?>
+
