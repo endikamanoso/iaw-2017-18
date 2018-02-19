@@ -1,0 +1,40 @@
+.error{
+    background-color: red;
+    color:white;
+    font-weight: bold;
+}
+
+li{
+    font-size:1.5em;
+}
+
+li a {
+    font-size: .5em;
+}
+li a,button{
+    color:gray;
+    border:1px solid gray;
+    border-radius:1em;
+    text-decoration: none;
+    padding:.2em;
+    background-color:white;
+}
+
+li a:hover, button:hover{
+    background-color:gray;
+    color:white;
+}
+
+label,input,button{
+    font-size:2em;
+}
+
+button{
+    margin-top:1em;
+}
+
+h1{
+    font-family: Arial;
+    border-bottom:1px solid gray;
+    color:gray;
+}
