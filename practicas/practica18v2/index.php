@@ -68,21 +68,22 @@
             var jqxhr = $.ajax({
                 url: "obtenerProvincias.php",
                 method: "get",
-                dataType: "json",
+                dataType: "xml",
                 data: {
                     comunidad: $("#comunidad").val()
                 }
             });
             jqxhr
                 .done(function (data) {
-                    var provincias = data["provincias"];
-                    for (var provincia of provincias) {
-                        $("#provincia")
-                            .append(
-                                "<option value='" + provincia["n_provincia"] + "'>" +
-                                provincia["nombre"]+"</option>"
-                            )
-                    }
+                    var provincias = $(data).find("provincia");
+                    provincias.each(function(i,provincia){
+                        var nombre=$(provincia).find("nombre").text();
+                        var n_provincia=$(provincia).find("n_provincia").text();
+                        $("#provincia").append(
+                            "<option value='"+n_provincia+"'>"+nombre+"</option>"
+                        )
+
+                    })
 
                 })
                 .fail(function (jqXHR, textStatus) {

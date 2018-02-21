@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Bellefair|Quicksand:400,700');
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+header{
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:80px;
+    background-color: yellow;
+}
+
+header h1{
+    margin:.4em 0;
+    font-family: 'Bellefair', serif;
+
+}
+
+#bicis{
+    position:fixed;
+    left:0;
+    top:80px;
+    right:300px;
+    bottom:0;
+    overflow-y: auto;
+}
+
+.ficha{
+    padding:1em;
+}
+
+.ficha h2{
+    font-family: 'Bellefair', serif;
+}
+
+.ficha:nth-of-type(even){
+    background-color:#CCC;
+}
+
+.ficha p{
+    margin:0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.detalle{
+    padding:1em 0;
+}
+
+#contenedorFormulario{
+    position:fixed;
+    right:0;
+    top:80px;
+    width:300px;
+    height:100%;
+    padding:1em .5em;
+}
+
+#contenedorFormulario h2{
+    font-family: 'Bellefair', serif;
+}
+
+#imagenGrande{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:black;
+    display:none;
+    overflow-y: auto;
+}
+
+#fotoBiciGrande img{
+    max-width:100%;
+}
+
+strong{
+    font-weight: 700;
+}
+
+a{
+    font-weight: 700;
+}
+

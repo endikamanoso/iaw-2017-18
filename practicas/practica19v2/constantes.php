@@ -18,6 +18,9 @@ const E_PASSWORD_NO_COINCIDE=6;
 const E_ARTICULO_ANADIDO=7;
 const E_FALTAN_DATOS=8;
 const E_CARRITO_ACTUALIZADO=9;
+const E_PASSWORD_NO_VALIDA=10;
+const E_USUARIO_ANADIDO=11;
+
 
 const ARRAY_MENSAJES=array(
   E_SIN_ERROR=>"No hay errores",
@@ -29,8 +32,10 @@ const ARRAY_MENSAJES=array(
   E_PASSWORD_INCORRECTA=>"La contraseña no es correcta",
   E_ARTICULO_ANADIDO=>"El artículo se añadió correctamente",
   E_FALTAN_DATOS=>"Faltan datos",
-  E_CARRITO_ACTUALIZADO=>"Se actualizó el carrito correctamente"
-);
+  E_CARRITO_ACTUALIZADO=>"Se actualizó el carrito correctamente",
+  E_PASSWORD_NO_VALIDA=>"Contraseña no válida (al menos debe de tener tamaño 6)",
+  E_USUARIO_ANADIDO=>"Usuario añadido"
+) ;
 
 
 function conectarBD(){

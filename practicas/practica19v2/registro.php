@@ -1,9 +1,11 @@
 <?php
 session_start();
 include("constantes.php");
-if(isset($_SESSION["mensaje"])){
-    unset($_SESSION["mensaje"]);
-}
+if(isset($_SESSION["mensaje"]) && $_SESSION["mensaje"]==E_USUARIO_ANADIDO)
+    header('Location:index.php');
+
+$mensaje=obtenermensaje();
+echo $mensaje;
 ?>
 <!doctype html>
 <html lang="es">
@@ -55,9 +57,15 @@ if(isset($_SESSION["mensaje"])){
                 </div>
             </div>
             <div class="form-group row">
-                <label for="apellidos" class="col-sm-2 col-form-label">Apellidos</label>
+                <label for="apellido1" class="col-sm-2 col-form-label">Primer Apellido</label>
                 <div class="col-sm-10">
-                    <input type="text" name="apellidos" id="apellidos" class="form-control" placeholder="escriba sus apellidos" required>
+                    <input type="text" name="apellido1" id="apellido1" class="form-control" placeholder="escriba sus apellidos" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="apellido2" class="col-sm-2 col-form-label">Segundo Apellido (opcional)</label>
+                <div class="col-sm-10">
+                    <input type="text" name="apellido2" id="apellido2" class="form-control" placeholder="escriba sus apellidos" required>
                 </div>
             </div>
             <div class="form-group row">

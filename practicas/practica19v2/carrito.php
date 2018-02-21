@@ -66,7 +66,7 @@ $mensaje=obtenermensaje();
                             echo "<td><strong>".$fila["nombre"]."</strong></td>";
                             echo "<td>".$fila["precio"]."&euro;</td>";
                             $id=$fila["id_articulo"];
-                            echo "<td><label for='cantidad$id'>Cantidad&nbsp;&nbsp;</label><input type='number' id='cantidad$id' name='cantidad[$id]' value='".$fila["cantidad"]."'></td>";
+                            echo "<td><label for='cantidad$id'>Cantidad&nbsp;&nbsp;</label><input type='number' id='cantidad$id' name='cantidad[$id]' value='".$fila["cantidad"]."' min='1'></td>";
                             echo "<td><a href='quitar.php?id_articulo=".$fila["id_articulo"]."' class='btn btn-danger'>Quitar</a>";
                         echo "</tr>";
                         $total+=$fila["precio"]*$fila["cantidad"];
