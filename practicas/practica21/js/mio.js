@@ -38,7 +38,8 @@ $(function(){
         $(this).fadeOut(1000);
     });
 
-/*    $("#votar").on("submit",function(e){
+    $("#votar").on("click",function(e){
+        console.log("aqui");
         e.preventDefault();
         var jqxhr=$.ajax({
             url: "votar.php",
@@ -54,9 +55,40 @@ $(function(){
             else{
                 $("#contenidoMensajeVotar").empty().append("<p class='text-danger'>"+MENSAJES[data["error"]["codigo"]]+"</p>");
             }
-            $("#mensajeVotar").show();
+            $("#mensajeVotar").modal("show");
         }).fail(function(){
             $("#contenidoMensajeVotar").empty().append("<p class='text-danger'>"+MENSAJES[E_BD_SIN_CONEXION]+"</p>");
         })
-    })*/
+    })
+
+    $("#votacion").on("click",function(e){
+        $("#contenidoVotacion").empty();
+        var jqxhr=$.ajax({
+            url: "votacion.php",
+            method:"get",
+            dataType:"json",
+            data:{
+                bici:$("#bici").val()
+            }
+        }).done(function(data){
+            if(data["error"]["codigo"]==E_SIN_ERROR){
+                let bicis=data["bicis"];
+                $("#contenidoVotacion").append("<ol id='listaVotacion'></ol>");
+                for(bici of bicis){
+                    $("#listaVotacion").append("<li><strong>"+bici["modelo"]+
+                        "</strong><br> Votos:<strong>"+bici["votos"]+"</strong> Porcentaje: <strong>"+
+                        parseFloat(Math.round(bici["porcentaje"] * 100) / 100).toFixed(2)+"%</strong></li>");
+                }
+
+            }
+            else{
+                $("#contenidoVotacion").append("<p class='text-danger'>"+MENSAJES[data["error"]["codigo"]]+"</p>");
+            }
+            $("#modalVotacion").modal("show");
+        }).fail(function(){
+            $("#contenidoVotacion").append("<p class='text-danger'>"+MENSAJES[E_BD_SIN_CONEXION]+"</p>");
+        })
+    })
+
+
 });

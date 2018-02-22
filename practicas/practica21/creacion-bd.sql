@@ -94,9 +94,3 @@ CREATE USER bicis@localhost IDENTIFIED BY '12345';
 GRANT INSERT,UPDATE,DELETE,SELECT ON bicis.* TO bicis@localhost;
 
 
-
-SELECT m.nombre as marca,b.modelo as modelo,b.votos as votos,
-b.precio as precio,t.tipo as tipo,b.url as url,b.imagen as imagen
-FROM bicis b
-JOIN marcas m USING(id_marca)
-JOIN tipos_bici t USING(id_tipo);
